@@ -89,9 +89,9 @@ function newGame() {
   newGameButton.addEventListener("click", function (e) {
     randomNumber = parseInt(Math.random() * 100 + 1);
     prevGuess = [];
-    attempts = 1;
+    attempts = 0;
     guessSlot.innerHTML = "";
-    remaining.innerHTML = `${11 - attempts}`;
+    remaining.innerHTML = `${10 - attempts}`;
     userInput.removeAttribute("disabled");
     startOver.removeChild(p);
 
